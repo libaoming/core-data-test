@@ -15,7 +15,7 @@
 * in <projectname>.xcdatamodeld , add entity (table)
 * in entity , add attribute and type. note: image store in binary && select image attribute > attribute, check allow erternal storage
 
-
+<br><br>
 
 
 
@@ -39,7 +39,7 @@
 ```
 
 
-
+<br><br>
 
 #### step4
 
@@ -68,7 +68,7 @@
             }
 ```
 
-
+<br><br>
 #### step5
 
 * fetch entity 
