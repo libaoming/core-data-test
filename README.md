@@ -7,11 +7,17 @@
 * create a project && check use coredata
 
 
+<br><br>
+
 
 #### step2
 
 * in <projectname>.xcdatamodeld , add entity (table)
 * in entity , add attribute and type. note: image store in binary && select image attribute > attribute, check allow erternal storage
+
+
+
+
 
 
 #### step3
@@ -31,6 +37,8 @@
     }
 
 ```
+
+
 
 
 #### step4
