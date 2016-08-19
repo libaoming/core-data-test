@@ -8,7 +8,7 @@
 * create a project && check use coredata
 
 
-<br><br>
+<br>
 
 
 ### step2
