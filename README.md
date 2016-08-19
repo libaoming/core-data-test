@@ -1,8 +1,10 @@
 # core-data-test
 
-### CoreData setup
+<br><br>
 
-#### step1 
+## CoreData setup
+
+### step1 
 
 * create a project && check use coredata
 
@@ -10,17 +12,17 @@
 <br><br>
 
 
-#### step2
+### step2
 
 * in <projectname>.xcdatamodeld , add entity (table)
 * in entity , add attribute and type. note: image store in binary && select image attribute > attribute, check allow erternal storage
 
-<br><br>
+<br>
 
 
 
 
-#### step3
+### step3
 
 * in editor, select "create NSObject management subclass" ,  Xcode create <entity name>.swift  && <entity name + CoreDataProperties>.swift
 * note: if you are  image attribute, you have to add get&set func in <entity name>
@@ -39,9 +41,9 @@
 ```
 
 
-<br><br>
+<br>
 
-#### step4
+### step4
 
 * save entity 
 
@@ -68,8 +70,8 @@
             }
 ```
 
-<br><br>
-#### step5
+<br>
+### step5
 
 * fetch entity 
 
