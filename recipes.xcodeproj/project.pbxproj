@@ -13,6 +13,10 @@
 		9A3EFDC71D66C6FA00F6FB68 /* recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EFDC51D66C6FA00F6FB68 /* recipes.xcdatamodeld */; };
 		9A3EFDC91D66C6FA00F6FB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A3EFDC81D66C6FA00F6FB68 /* Assets.xcassets */; };
 		9A3EFDCC1D66C6FA00F6FB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3EFDCA1D66C6FA00F6FB68 /* LaunchScreen.storyboard */; };
+		9A3EFDD81D66D3C400F6FB68 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EFDD61D66D3C400F6FB68 /* Recipe+CoreDataProperties.swift */; };
+		9A3EFDD91D66D3C400F6FB68 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EFDD71D66D3C400F6FB68 /* Recipe.swift */; };
+		9A3EFDDB1D66D6CF00F6FB68 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EFDDA1D66D6CF00F6FB68 /* RecipeCell.swift */; };
+		9A3EFDDD1D66E3E900F6FB68 /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3EFDDC1D66E3E900F6FB68 /* CreateRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9A3EFDC81D66C6FA00F6FB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A3EFDCB1D66C6FA00F6FB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A3EFDCD1D66C6FA00F6FB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3EFDD61D66D3C400F6FB68 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9A3EFDD71D66D3C400F6FB68 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		9A3EFDDA1D66D6CF00F6FB68 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		9A3EFDDC1D66E3E900F6FB68 /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		9A3EFDBD1D66C6FA00F6FB68 /* recipes */ = {
 			isa = PBXGroup;
 			children = (
+				9A3EFDD51D66D35400F6FB68 /* Controller */,
+				9A3EFDD41D66D34D00F6FB68 /* View */,
+				9A3EFDD31D66D34600F6FB68 /* Modal */,
 				9A3EFDBE1D66C6FA00F6FB68 /* AppDelegate.swift */,
-				9A3EFDC01D66C6FA00F6FB68 /* ViewController.swift */,
-				9A3EFDC21D66C6FA00F6FB68 /* Main.storyboard */,
 				9A3EFDC81D66C6FA00F6FB68 /* Assets.xcassets */,
 				9A3EFDCA1D66C6FA00F6FB68 /* LaunchScreen.storyboard */,
 				9A3EFDCD1D66C6FA00F6FB68 /* Info.plist */,
 				9A3EFDC51D66C6FA00F6FB68 /* recipes.xcdatamodeld */,
 			);
 			path = recipes;
+			sourceTree = "<group>";
+		};
+		9A3EFDD31D66D34600F6FB68 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				9A3EFDD61D66D3C400F6FB68 /* Recipe+CoreDataProperties.swift */,
+				9A3EFDD71D66D3C400F6FB68 /* Recipe.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		9A3EFDD41D66D34D00F6FB68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A3EFDC21D66C6FA00F6FB68 /* Main.storyboard */,
+				9A3EFDDA1D66D6CF00F6FB68 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9A3EFDD51D66D35400F6FB68 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A3EFDC01D66C6FA00F6FB68 /* ViewController.swift */,
+				9A3EFDDC1D66E3E900F6FB68 /* CreateRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3EFDC11D66C6FA00F6FB68 /* ViewController.swift in Sources */,
+				9A3EFDD81D66D3C400F6FB68 /* Recipe+CoreDataProperties.swift in Sources */,
 				9A3EFDC71D66C6FA00F6FB68 /* recipes.xcdatamodeld in Sources */,
+				9A3EFDDB1D66D6CF00F6FB68 /* RecipeCell.swift in Sources */,
+				9A3EFDDD1D66E3E900F6FB68 /* CreateRecipeVC.swift in Sources */,
 				9A3EFDBF1D66C6FA00F6FB68 /* AppDelegate.swift in Sources */,
+				9A3EFDD91D66D3C400F6FB68 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
